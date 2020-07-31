@@ -1,6 +1,6 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-author: "Hernando Consuegra Álvarez"
+author: "Hernando Consuegra Alvarez"
 date: "7/31/2020"
 output: 
   html_document:
