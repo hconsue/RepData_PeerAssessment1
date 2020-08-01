@@ -54,7 +54,7 @@ red line shows the mean and the median that are basically the same.
 
 ```r
 hist(steps_day$steps/10^3, breaks = 25,
-     main = "Fig. 1 - Histogram of steps taken each day \n October - November 2012",
+     main = "Fig 1 - Histogram of steps taken each day \n October - November 2012",
      xlab = "Thousands of steps per day")
 rug(steps_day$steps/10^3)
 abline(v = mean_steps/10^3, col = "red", lwd = 2)
@@ -77,7 +77,7 @@ names(steps_interval) <- c("interval", "steps")
 ## Plot the graph
 plot(steps_interval$interval, steps_interval$steps, 
      type = "l",
-     main = "Fig. 2 - Daily Activity Steps Pattern \n October - November 2012",
+     main = "Fig 2 - Daily Activity Steps Pattern \n October - November 2012",
      xlab = "Intervals",
      ylab = "Steps")
 ```
@@ -163,7 +163,7 @@ the mean and the median.
 
 ```r
 hist(steps_day_mod$steps/10^3, breaks = 25,
-     main = "Fig. 3 - Histogram of steps taken each day Modified \n October - November 2012",
+     main = "Fig 3 - Histogram of steps taken each day Modified \n October - November 2012",
      xlab = "Thousands of steps per day",
      ylim = c(0, 22))
 abline(v = mean_steps_mod/10^3, col = "red", lwd = 2)
@@ -203,7 +203,7 @@ Finally, we plot the differences in activity patterns between weekdays and weeke
 
 ```r
 library(ggplot2)
-mygraph_title = "Fig 4 - Differences in activity patterns between weekdays and weekends"
+mygraph_title = "Fig 4 - Difference in activity patterns between weekdays and weekends"
 graph <- ggplot(steps_daytype, aes(interval, steps)) 
 graph <- graph + geom_line() + facet_grid(day ~ .)
 graph <- graph + ggtitle(mygraph_title) +
